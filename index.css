@@ -1,0 +1,80 @@
+/* Основные стили для всей страницы */
+body {
+    background: linear-gradient(180deg, #1c1c1c, #004d00); /* Тёмно-зеленый градиент */
+    color: white; /* Белый цвет текста */
+    font-family: 'Roboto', sans-serif; /* Используем шрифт Roboto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Страница на весь экран */
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 40px;
+    color: #00ff00; /* Яркий зелёный цвет для заголовка */
+    margin: 20px 0;
+}
+
+p {
+    font-size: 18px;
+    color: #e0e0e0; /* Светлый цвет для текста */
+    margin: 20px 0;
+}
+
+img {
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3); /* Легкое свечение вокруг изображения */
+    margin-bottom: 20px;
+}
+
+/* Стили для ссылки */
+a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #b3ffb3; /* Цвет ссылки при наведении */
+}
+
+/* Стили для кнопки */
+button {
+    background: linear-gradient(145deg, #00ff00, #004d00); /* Зелёный градиент */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #004d00, #00ff00); /* Перемещение градиента */
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Эффект нажатия */
+}
+
+/* Стили для блока с сообщением */
+.hiddenMessage {
+    display: none;
+    font-size: 24px;
+    color: #00ff00;
+    margin-top: 20px;
+}
+
+/* Стили для видимого сообщения */
+.visibleMessage {
+    display: block;
+}
